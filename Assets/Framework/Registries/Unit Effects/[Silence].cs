@@ -8,6 +8,7 @@ public partial class UnitEffect
 
     public class Silence : UnitEffect
     {
+        public override string Name => "Silence";
         public Silence(int d) : base(d) { }
 
         protected override void InternalSetup(bool val)

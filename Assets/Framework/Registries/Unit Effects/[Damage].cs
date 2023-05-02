@@ -9,6 +9,7 @@ public partial class UnitEffect
 
     public class Damage : UnitEffect
     {
+        public override string Name => "Damage";
         public Damage(int duration) : base(duration) { }
         protected override void InternalSetup(bool val)
         {

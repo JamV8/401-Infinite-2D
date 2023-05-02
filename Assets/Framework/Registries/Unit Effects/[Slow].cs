@@ -10,6 +10,7 @@ public partial class UnitEffect
 
     public class Slow : UnitEffect
     {
+        public override string Name => "Slow";
         public Slow(int d) : base(d) { }
 
         protected override void InternalSetup(bool val)

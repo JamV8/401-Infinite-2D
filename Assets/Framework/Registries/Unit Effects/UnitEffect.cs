@@ -9,6 +9,8 @@ using UnityEngine.InputSystem;
 
 public abstract partial class UnitEffect
 {
+
+    public abstract string Name { get; }
     /// <summary>
     /// The <see cref="Unit"/> that this <see cref="UnitEffect"/> is inflicted upon.
     /// </summary>
@@ -111,6 +113,6 @@ public abstract partial class UnitEffect
 
     public override string ToString()
     {
-        return $"[{GetType().Name}:{Duration}]";
+        return $"[{Name}:{Duration}]";
     }
 }
