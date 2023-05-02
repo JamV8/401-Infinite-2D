@@ -12,9 +12,9 @@ public static class PassiveRegistry
     {
         List<ConstructionTemplate<Passive>> masterList = new()
         {
-            () => new Passive.Agile("Agile"),
-            () => new Passive.PointRunner("Point Runner"),
-            () => new Passive.Quantum("Quantum"),
+            () => new Passive.Agile(),
+            () => new Passive.PointRunner(),
+            () => new Passive.Quantum()
         };
 
         Registry = masterList.AsReadOnly();

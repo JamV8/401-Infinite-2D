@@ -7,14 +7,11 @@ using UnityEngine;
 /// </summary>
 public abstract partial class Passive
 {
+    public abstract string Name { get; }
     public Player EmpoweredPlayer { get; private set; }
-    public string Name { get; set; }
     public object[] State { get; private set; } = new object[0];
 
-    protected Passive(string name)
-    {
-        Name = name;
-    }
+    protected Passive() { }
 
     public void SetActive(bool val, Player empoweredPlayer)
     {

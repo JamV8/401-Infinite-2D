@@ -14,7 +14,8 @@ public partial class Passive
     /// </summary>
     public class Quantum : Passive
     {
-        public Quantum(string name) : base(name) { }
+        public override string Name => "Quantum";
+        public Quantum() : base() { }
 
         protected override void InternalSetup(bool val)
         {

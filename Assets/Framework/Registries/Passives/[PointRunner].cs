@@ -12,7 +12,8 @@ public partial class Passive
     /// </summary>
     public class PointRunner : Passive
     {
-        public PointRunner(string name) : base(name) { }
+        public override string Name => "Point Runner";
+        public PointRunner() : base() { }
 
         public bool Triggerable => (bool)State[0];
         protected override void InternalSetup(bool val)

@@ -11,7 +11,8 @@ public partial class Passive
     /// </summary>
     public class Agile : Passive
     {
-        public Agile(string name) : base(name) { }
+        public override string Name => "Agile";
+        public Agile() : base() { }
 
         protected override void InternalSetup(bool val)
         {
